@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Hello! This is the dino you requested:</h1>
+    <br>
+  <img src="https://i.redd.it/ce1kcbnfymez.jpg" alt="dino pic">
+  <br>
+  <h1>
+   <span>Name: <%= @dino.name %>
+      <br>
+     <span>Color: <%= @dino.color %>
+      <br>
+     <span>Breed: <%= @dino.breed %>
+    </span>
+  </h1>
+  <%= link_to "Edit this Dino!", edit_dino_path %>
+  <%= link_to 'Delete this Dino!', dino_path(@dino), method: :delete,
+  data: { confirm: 'Are you sure?'} %>
+</div>

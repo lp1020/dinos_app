@@ -1,0 +1,19 @@
+<%= form_for (@dino) do |f| %>
+<div class = "dino-div">
+  <div>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+</div>
+<div>
+  <%= f.label :color %>
+  <%= f.text_field :color %>
+</div>
+<div>
+  <%= f.label :breed %>
+  <%= f.text_field :breed %>
+</div>
+<div>
+  <%= f.submit %>
+</div>
+</div>
+<% end %>

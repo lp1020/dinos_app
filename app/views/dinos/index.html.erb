@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>This is DINOS view !!!</h1>
+  <h2> sooooooo, here you go: 🐉 🐉 🐉 🐉 🐉 🐉 🐉 🐉 🐉 </h2>
+
+<% @dinos.each do |d| %>
+<div class="dino-div">
+<h3><%= link_to d.name, dino_path(d) %></h3>
+<% end %>
+  <img src="https://thumbs.dreamstime.com/x/cute-green-dinosaur-cartoon-illustration-33993033.jpg" alt="dino pic">
+  <br>
+  <p><%= link_to "Create new dino", new_dino_path %></p>
+  <p><%= link_to "Back to home page", welcome_path %></p>
+</div>
+
+</div>
